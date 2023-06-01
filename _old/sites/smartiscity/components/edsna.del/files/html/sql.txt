@@ -1,0 +1,2 @@
+SELECT *, FROM_UNIXTIME(`captcha_data`.`timestamp`, '%Y-%m-%d %h:%i:%s') FROM `captcha_data` WHERE `municipality` like '%mou%' and `mac` like '%30:03%'
+order by `timestamp` desc

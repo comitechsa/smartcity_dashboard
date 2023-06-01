@@ -1,0 +1,305 @@
+/* Menu Style Sheet */
+
+.topmenu
+{
+	BACKGROUND-COLOR: #E6E6EE;
+	height: 30px;
+}
+.Menu,.SubMenuTable
+{
+	font-family: Verdana, Tahoma;
+	font-size: 11px;
+
+	padding:	0;
+
+	white-space:	nowrap;
+	cursor:		default;
+}
+
+.SubMenu
+{
+	position:	absolute;
+	visibility:	hidden;
+
+	/*
+	   Netscape/Mozilla renders borders by increasing
+	   their z-index.  The following line is necessary
+	   to cover any borders underneath
+	*/
+	z-index:	100;
+	border:		0;
+	padding:	0;
+
+	overflow:	visible;
+	border:		1px solid #8C867B;
+	
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#BDC3BD, Direction=135, Strength=4);
+}
+
+.SubMenuTable
+{
+	overflow:	visible;
+}
+
+.MainItem,.MainItemHover,.MainItemActive,
+.MenuItem,.MenuItemHover,.MenuItemActive
+{
+	border:		0;
+	cursor:		pointer;
+	white-space:	nowrap;
+}
+
+.MainItem
+{
+	/*background-color:	#EFEBDE;*/
+}
+
+.MainItemHover,.MainItemActive
+{
+	background-color:	#FADEB5;
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=1,startColorStr=#FFF4CC,endColorStr=#FFD69A);
+}
+
+.MenuItem
+{
+	BACKGROUND-COLOR: #FFF;
+}
+
+.MenuItemHover,.MenuItemActive
+{
+	background-color:	#FADEB5;
+}
+
+
+/* horizontal main menu */
+
+.MainItem
+{
+	padding: 5px 2px 5px 2px;
+	/*border:		1px solid #E6E6EE;*/
+}
+
+td.MainItemHover,td.MainItemActive
+{
+	padding: 4px 1px 4px 1px;
+	border:		1px solid #8C867B;
+}
+
+.MainFolderLeft,.MainItemLeft,
+.MainFolderText,.MainItemText,
+.MainFolderRight,.MainItemRight
+{
+	background-color:inherit;
+}
+
+/* vertical main menu sub components */
+
+td.MainFolderLeft,td.MainItemLeft
+{
+	padding-top:	2px;
+	padding-bottom:	2px;
+	padding-left:	0px;
+	padding-right:	2px;
+
+	border-top:	1px solid #3169C6;
+	border-bottom:	1px solid #3169C6;
+	border-left:	1px solid #3169C6;
+
+	background-color:	inherit;
+}
+
+td.MainFolderText,td.MainItemText
+{
+	padding-top:	2px;
+	padding-bottom:	2px;
+	padding-left:	5px;
+	padding-right:	5px;
+
+	border-top:	1px solid #3169C6;
+	border-bottom:	1px solid #3169C6;
+
+	background-color:	inherit;
+	white-space:	nowrap;
+}
+
+td.MainFolderRight,td.MainItemRight
+{
+	padding-top:	2px;
+	padding-bottom:	2px;
+	padding-left:	0px;
+	padding-right:	0px;
+
+	border-top:	1px solid #3169C6;
+	border-bottom:	1px solid #3169C6;
+	border-right:	1px solid #3169C6;
+
+	background-color:	inherit;
+}
+
+tr.MainItem td.MainFolderLeft,
+tr.MainItem td.MainItemLeft
+{
+	padding-top:	3px;
+	padding-bottom:	3px;
+	padding-left:	1px;
+	padding-right:	2px;
+
+	white-space:	nowrap;
+
+	border:		0;
+	background-color:	inherit;
+}
+
+tr.MainItem td.MainFolderText,
+tr.MainItem td.MainItemText
+{
+	padding-top:	3px;
+	padding-bottom:	3px;
+	padding-left:	5px;
+	padding-right:	5px;
+
+	border:		0;
+	background-color:	inherit;
+}
+
+tr.MainItem td.MainItemRight,
+tr.MainItem td.MainFolderRight
+{
+	padding-top:	3px;
+	padding-bottom:	3px;
+	padding-left:	0px;
+	padding-right:	1px;
+
+	border:		0;
+	background-color:	inherit;
+}
+
+/* sub menu sub components */
+
+.MenuFolderLeft,.MenuItemLeft
+{
+	padding-top:	2px;
+	padding-bottom:	2px;
+	padding-left:	1px;
+	padding-right:	3px;
+
+	border-top:	1px solid #3169C6;
+	border-bottom:	1px solid #3169C6;
+	border-left:	1px solid #3169C6;
+
+	background-color:	inherit;
+	white-space:	nowrap;
+}
+
+.MenuFolderText,.MenuItemText
+{
+	padding-top:	2px;
+	padding-bottom:	2px;
+	padding-left:	5px;
+	padding-right:	5px;
+
+	border-top:	1px solid #3169C6;
+	border-bottom:	1px solid #3169C6;
+
+	background-color:	inherit;
+	white-space:	nowrap;
+}
+
+.MenuFolderRight,.MenuItemRight
+{
+	padding-top:	2px;
+	padding-bottom:	2px;
+	padding-left:	0px;
+	padding-right:	0px;
+
+	border-top:	1px solid #3169C6;
+	border-bottom:	1px solid #3169C6;
+	border-right:	1px solid #3169C6;
+
+	background-color:	inherit;
+	white-space:	nowrap;
+}
+
+.MenuItem .MenuFolderLeft,
+.MenuItem .MenuItemLeft
+{
+	padding-top:	3px;
+	padding-bottom:	3px;
+	padding-left:	2px;
+	padding-right:	3px;
+
+	white-space:	nowrap;
+
+	border:		0;
+	/*FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=1,startColorStr=#F9F9FF,endColorStr=#9F9DB9); */
+	background-color:	#EFEFDE;
+}
+
+.MenuItem .MenuFolderText,
+.MenuItem .MenuItemText
+{
+	padding-top:	3px;
+	padding-bottom:	3px;
+	padding-left:	5px;
+	padding-right:	5px;
+
+	border:		0;
+	background-color:	inherit;
+	/*FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=1,startColorStr=#D7D7E5,endColorStr=#F3F3F3);*/
+}
+
+.MenuItem .MenuFolderRight,
+.MenuItem .MenuItemRight
+{
+	padding-top:	3px;
+	padding-bottom:	3px;
+	padding-left:	0px;
+	padding-right:	1px;
+
+	border:		0;
+	background-color:	inherit;
+}
+
+/* menu splits */
+
+.MenuSplit
+{
+	margin: 	2px;
+	height:		2px;
+	overflow:	hidden;
+	background-color:	inherit;
+	border-top:	1px solid #C6C3BD;
+}
+
+/* image shadow animation */
+
+/*
+	seq1:	image for normal
+	seq2:	image for hover and active
+
+	To use, in the icon field, input the following:
+	<img class="seq1" src="normal.gif" /><img class="seq2" src="hover.gif" />
+*/
+
+.MenuItem img.seq1
+{
+	display:	inline;
+}
+
+.MenuItemHover seq2,
+.MenuItemActive seq2
+{
+	display:	inline;
+}
+
+.MenuItem .seq2,
+.MenuItemHover .seq1,
+.MenuItemActive .seq1
+{
+	display:	none;
+}
+
+.dis
+{
+	color:#eeeeee;
+}

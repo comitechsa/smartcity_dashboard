@@ -1,0 +1,153 @@
+@import url(https://fonts.googleapis.com/css?family=Gudea);
+
+body {
+	background-color: #312747;
+	margin: auto;
+	font-family: 'Gudea', Arial, sans-serif;
+	overflow: hidden;
+	width: 1600px;
+}
+
+/***************Main************************/
+h1 {
+	color: white;
+	margin: 35px 0 35px 40px;
+	font-size: 32pt;
+	letter-spacing: 4px;
+	width: 900px;
+}
+
+h2 {
+	position: relative;
+	margin: -73px 0 0 1453px;
+	float: left;
+	color: white;
+	font-size: 14pt;
+	letter-spacing: 1px;
+}
+
+header img {
+	position: relative;
+	width: 45px;
+	height: 45px;
+	left: -30px;
+	top: -88px;
+	border-radius: 3px;
+	float: right;
+}
+
+.container {
+	width:800px;
+	padding: 0;
+	margin: 0;
+}
+
+.divblock1 {
+	width: 760px;
+	padding: 0;
+	margin-left: -280px;
+	position: fixed;
+}
+
+.divblock2 {
+	width: 320px;
+	padding: 0;
+	position: fixed;
+	left: 386px;
+}
+
+.divblock3 {
+	width: 320px;
+	padding: 0;
+	position: fixed;
+	left: 729px;
+}
+
+.divblock4 {
+	width: 320px;
+	padding: 0;
+	position: fixed;
+	left: 1070px;
+}
+
+.divblock5 {
+	width: 470px;
+	padding: 0;
+	left: 1383px;
+	position: fixed;
+}
+
+img {
+	padding: 1.2px;
+}
+
+#bigimgsize{
+	width: 307px;
+	height: 150px;
+}
+
+#imgsize {
+	width: 147px;
+	height: 148px;
+}
+
+#vbig {
+	width: 306px;
+	height: 306px;
+}
+
+/***************Screen 1024px************************/
+@media screen and (max-width: 1024px){
+
+h2 {
+	margin: -70px 0 0 890px;
+}
+
+header img {
+	left: -595px;
+	top: -82px;
+}	
+
+.container {
+	width: 1600px;
+	margin-left: -283px;
+}
+
+}
+
+/***************Screen 1280px************************/
+@media screen and (min-width: 1124px) and (max-width: 1280px){
+
+.container {
+	width: 1260px;
+	margin-left: -160px;
+}
+
+h2 {
+	margin: -70px 0 0 1130px;
+}
+
+header img {
+	left: -350px;
+}
+
+}
+
+/***************Screen 1366px************************/
+@media screen and (min-width: 1366px) and (max-width: 1366px){
+
+.container {
+	width: 1120px;
+	margin-left: -115px;
+}
+
+h2 {
+	margin: -70px 0 0 1225px;
+}
+
+header img {
+	left: -260px;
+	top: -82px;
+}	
+
+}

@@ -1,0 +1,420 @@
+/*
+Responsive Template. 
+*/
+
+
+/* NAMING CONVENTION
+***Component Rules ***
+.component-name
+.component-name--modifier-name
+.component-name__sub-object
+.component-name__sub-object--modifier-name
+*/
+
+/********* BASE *********
+***************************/
+body{
+	background:#fff;
+	color:#666;
+	font-family:"Arvo","Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:1em;
+	line-height:1.4em; 
+	font-weight:normal;
+	margin-top:20px;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:600;
+	font-family:"Dosis", Arial, Helvetica, sans-serif; 
+	line-height:1.5em;
+	margin:.45em 0;
+	padding:0;
+} 
+h1 {font-size:2.3em;}
+@font-face {
+    font-family: 'MeteoconsRegular';
+    src: url('../meteocons-font/meteocons-webfont.eot');
+    src: url('../meteocons-font/meteocons-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../meteocons-font/meteocons-webfont.woff') format('woff'),
+         url('../meteocons-font/meteocons-webfont.ttf') format('truetype'),
+         url('../meteocons-font/meteocons-webfont.svg#MeteoconsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.icon:before {
+	font-family: 'MeteoconsRegular';
+	content: attr(data-icon);
+}
+p{ margin:0 0 1.5em;}
+/* links */
+a,
+a:visited,
+a:active{color:#18a8bc;}
+a:hover{color:#0099ff; text-decoration:none;}
+/* Box sizing. Awesome thing. Read about it here: http://www.w3schools.com/cssref/css3_pr_box-sizing.asp */
+*{box-sizing:border-box; -moz-box-sizing:border-box;}
+/* Responsive images  */
+img{ max-width:100%; height:auto;}
+/* Contain floats: h5bp.com/q */ 
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+.centered-text{text-align:center;}
+
+
+/********* LAYOUT *********
+***************************/
+.wrapper{
+	width: 92%; 
+	margin: 0 auto;
+	position:relative;
+}
+header{ 
+	padding:0px 0;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:30px;
+	z-index:100;
+	border-bottom:1px solid #d9d9d9;
+}
+#banner{ float:left;}
+#hero{
+	padding:60px 0 60px;
+}
+#about{padding:20px 0 30px;}
+
+footer{
+	background:#333;
+	color:#ccc;
+	font-size:80%;
+	padding:20px;
+	position:absolute;
+	bottom:0;
+	width:99%;
+}
+/*Grid*/
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+	margin-bottom:40px;
+}
+
+
+
+/********* MODULES *********
+***************************/
+/*Main menu (toggle)*/
+.menu-toggle{
+	display:block;
+	float:right;
+	padding:10px;
+	margin:22px 0 0;
+	background:#666;
+	color:#fff;
+	cursor:pointer;
+	text-transform:uppercase;
+	font-size:20px;
+}
+.menu-toggle.toggled-on{
+	background:#000;
+}
+.srt-menu{
+	display:none;
+}	
+.srt-menu.toggled-on{
+	display:block;
+}
+
+.srt-menu{
+	clear:both;
+	margin-bottom:20px;	
+}
+.srt-menu li.li-weather-form{background:#666; padding:10px;}
+.srt-menu li a {
+	color:#fff;
+	background:#666;
+	display:block;
+	padding:10px;
+	border-bottom:1px solid #555;
+	text-decoration:none;
+	font-size:.9em;
+}
+
+.city-image{ display:none;}
+
+.weather-widget{width:270px; margin:30px auto 0;}
+.weather-widget__weather-icon{ font-size:70px; width:270px; margin-bottom:70px;}
+.weather-widget__temperature-sign{ float:left; width:50px; font-size:70px; font-family:"Dosis", Arial, Helvetica, sans-serif; font-weight:600; }
+.weather-widget__temperature-digits{float:left; width:150px; font-size:140px; font-family:"Dosis", Arial, Helvetica, sans-serif; font-weight:600; }
+.weather-widget__temperature-system{float:left; width:70px; font-size:70px; font-family:"Dosis", Arial, Helvetica, sans-serif; font-weight:600;}
+.weather-widget__city{float:left; width:102px; margin: 53px  0 0 53px; font-size:30px; font-family:"Dosis", Arial, Helvetica, sans-serif; font-weight:500;}
+.weather-widget__date{float:left; margin: 56px  0 0 20px; font-size:22px; font-family:"Dosis", Arial, Helvetica, sans-serif; font-weight:500; color:#dc8804;}
+
+.weather-form{width:250px; margin:0 auto;}
+.weather-form__get-weather{float:left; width:145px; border:1px solid #d9d9d9; padding:0 5px; height:43px; border-radius: 6px 0 0 6px; }
+
+.button{
+	display:block; 
+	position:relative;
+	z-index:20;
+	padding:18px 20px; 
+	max-width:260px;
+	margin:0 auto;
+	border-radius:6px;
+	font-family:Arial, Helvetica, sans-serif; 
+	font-weight:bold; 
+	text-transform:uppercase;
+	text-decoration:none;
+	text-align:center;
+	background:#ff0000;
+	border:1px solid #2b2d34;
+	color:#fff!important; 
+	box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, .5);
+}
+.button:hover{ background:#000;}
+.button--blue{background:#51c4d4; border:1px solid #51c4d4;}
+.button--blue:hover{background:#3fb0c0;}
+.button--submit-right-attached{padding:0 5px; height:43px; border-radius:0 6px 6px 0; float:left;}
+
+.wallpapers-teaser{	display:none;}
+
+
+/********* THEME*********
+***************************/
+.background-blue{ background:#51c4d4; color:#fff;}
+.background-grey{ background:#2b2d34;}
+.background-lightgrey{ background:#f0f0f0;}
+.background-yellow{ background:#ffc56a; color:#fff;}
+.background-yellow__longshadow{ /*Thank you, http://sandbox.juan-i.com/longshadows/*/
+	text-shadow: rgb(230, 177, 95) 1px 1px,
+    rgb(230, 177, 95) 2px 2px,
+    rgb(230, 177, 95) 3px 3px,
+    rgb(230, 177, 95) 4px 4px,
+    rgb(230, 177, 95) 5px 5px,
+    rgb(230, 177, 95) 6px 6px,
+    rgb(230, 177, 95) 7px 7px,
+    rgb(230, 177, 95) 8px 8px,
+    rgb(230, 177, 95) 9px 9px,
+    rgb(230, 177, 95) 10px 10px,
+    rgb(230, 177, 95) 11px 11px,
+    rgb(230, 177, 95) 12px 12px,
+    rgb(231, 178, 95) 13px 13px,
+    rgb(232, 179, 96) 14px 14px,
+    rgb(234, 180, 96) 15px 15px,
+    rgb(235, 181, 97) 16px 16px,
+    rgb(236, 182, 98) 17px 17px,
+    rgb(238, 183, 98) 18px 18px,
+    rgb(239, 184, 99) 19px 19px,
+    rgb(241, 185, 99) 20px 20px,
+    rgb(242, 187, 100) 21px 21px,
+    rgb(243, 188, 101) 22px 22px,
+    rgb(245, 189, 101) 23px 23px,
+    rgb(246, 190, 102) 24px 24px,
+    rgb(248, 191, 102) 25px 25px,
+    rgb(249, 192, 103) 26px 26px,
+    rgb(250, 193, 104) 27px 27px,
+    rgb(252, 194, 104) 28px 28px,
+    rgb(253, 195, 105) 29px 29px,
+    rgb(255, 197, 106) 30px 30px;
+}
+
+.handwriting{
+	font-family:"La Belle Aurore", Arial, Sans;
+	font-size:22px;
+}
+
+
+/****************************************
+*****************************************
+MEDIAQUERIES
+*****************************************
+****************************************/
+
+/*
+LARGER MOBILE DEVICES
+This is for mobile devices with a bit larger screens.
+*/
+@media only screen and (min-width: 481px) {
+
+} 
+
+/*
+TABLET & SMALLER LAPTOPS
+The average viewing window and preferred media query for those is 768px.
+But I think that some more breathing space is good:)
+*/
+@media only screen and (min-width: 920px) {
+body:after {
+		content: 'large';
+		display: none;
+}
+.wrapper{
+
+	max-width: 1200px; 
+}
+#about .wrapper{
+	max-width:700px;
+}
+/*Grid*/
+.grid_1 { width: 5%; }
+.grid_2 { width: 13.333333333333%; }
+.grid_3 { width: 21.666666666667%; }
+.grid_4 { width: 30%; }
+.grid_5 { width: 38.333333333333%; }
+.grid_6 { width: 46.666666666667%; }
+.grid_7 { width: 55%; }
+.grid_8 { width: 63.333333333333%; }
+.grid_9 { width: 71.666666666667%; }
+.grid_10 { width: 80%; }
+.grid_11 { width: 88.333333333333%; }
+.grid_12 { width: 96.666666666667%; }
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+	margin-left: 1.6666666666667%;
+	margin-right: 1.6666666666667%;
+	float: left;
+	margin-bottom:0px;
+}
+.alpha{margin-left:0px;}
+.omega{margin-right:0px;}
+.rightfloat{float:right;}
+
+/*** Main menu ***/
+.menu-toggle{display:none;}
+#menu-main-navigation{display:block;}
+
+.srt-menu{
+	margin:			0;
+	padding:		0;
+	list-style:		none;
+}
+.srt-menu li {
+	float:			left;
+	position:		relative;
+	margin-left:1px;
+	height:25px;
+}
+.srt-menu a {
+	display:		block;
+	position:		relative;
+}
+/*** One-pager skin ***/
+#topnav, .srt-menu {
+	float:right;
+	margin: 0;
+}
+.srt-menu a {
+	text-decoration:none;
+}
+.srt-menu li a{
+	background:#f0f0f0;
+	color:#666;
+	margin:0; 
+	padding:10px 20px;
+	border-bottom:none;
+}
+.srt-menu a, .srt-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
+	color:			#666;	
+}
+.srt-menu li:hover > a,
+.srt-menu li.current a{ 
+	color:#39afbf;
+}
+.srt-menu li.li-weather-form{background:none; padding:0 0 0 10px;}
+
+.city-image{ display:block; float:left; width:40%; height:266px; margin-right:10%; background:url(../images/onepage-singapore.png) top right no-repeat;}
+.weather-widget{ width:310px; float:left;}
+.weather-widget__temperature-system{width:110px; font-size:116px; }
+
+.wallpapers-teaser{
+	display:block;
+	width:auto;
+	position:absolute;
+	bottom:-130px;
+	right:0;
+	text-align:right;
+	padding:0 0 10px 40px;
+	background:url(../images/onepage-arrow.png) bottom left no-repeat;
+}
+
+.flex-control-nav {bottom: 10px;}
+
+}
+
+/*
+DESKTOP
+This is the average viewing window. So Desktops, Laptops, and
+in general anyone not viewing on a mobile device. Here's where
+you can add resource intensive styles.
+*/
+@media only screen and (min-width: 1024px) {
+
+} 
+
+/*
+LARGE VIEWING SIZE
+This is for the larger monitors and possibly full screen viewers.
+*/
+@media only screen and (min-width: 1240px) {
+
+} 
+
+/*
+RETINA (2x RESOLUTION DEVICES)
+This applies to the retina iPhone (4s) and iPad (2,3) along with
+other displays with a 2x resolution.
+*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min--moz-device-pixel-ratio: 1.5),
+       only screen and (min-device-pixel-ratio: 1.5) {
+
+
+} 
+
+/*
+iPHONE 5 MEDIA QUERY
+iPhone 5 or iPod Touch 5th generation styles (you can include your own file if you want)
+*/
+@media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) { 
+
+  
+}
+
+/*
+PRINT STYLESHEET
+*/
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}

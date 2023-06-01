@@ -1,0 +1,227 @@
+/*Master Pages Classes */
+.m_body
+{
+	border:0;
+	margin-bottom:0;
+	margin-left:0;
+	margin-right:0;
+	margin-top:0;
+	width:100%;
+	height:100%;
+	scrollbar-face-color: #E1F0E8;
+	scrollbar-base-color : #99CCB2;
+	scrollbar-arrow-color: #008856;
+	scrollbar-highlight-color: #ffffff;
+	scrollbar-track-color: #99CCB2;
+	scrollbar-shadow-color: #008856;
+	scrollbar-3dlight-color: #008856;
+	scrollbar-darkshadow-color: #666666;
+	background-color: #ffffff;
+	font-size : 10px;
+	font-family: Verdana, Arial Greek, Arial, HellasArial, Helvetica;
+}
+	
+.m_n
+{
+	font-family : Verdana, Arial Greek, Arial, HellasArial, Helvetica;
+	font-size : 8pt;
+	color: #000000;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.m_nb
+{
+	font-family : Verdana, Arial Greek, Arial, HellasArial, Helvetica;
+	font-size : 8pt;
+	color: #000000;
+	font-weight:bold;
+	text-decoration: none;
+}
+
+.m_tb
+{
+	background-color : #ffffff;
+	border : 1px solid #99CCB2;
+	color : #000000;
+	font-size : 8pt;
+	font-family : Verdana;
+	behavior: url(/gms/client_scripts/common/hover.htc);
+}
+
+
+.m_b
+{
+	font-family : Verdana, Arial Greek, Arial, HellasArial, Helvetica;
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#ffffff,endColorStr=#CCE5D9); 
+	background-color: #CCE5D9; 
+	border-style: solid; 
+	border-top-width: 1px; 
+	border-right-width: 1px; 
+	border-bottom-width: 1px; 
+	border-left-width: 1px;
+	color: #000000;
+	font-size : 8pt;
+	width:100;
+}
+
+.m_hg
+{
+	background-color : #CCE5D9;
+	font-family : Verdana, Arial Greek, Arial, HellasArial, Helvetica;
+	font-size : 8pt;
+	color : #000000;
+	font-weight: bold;
+}
+
+.m_ng
+{
+	background-color : #F5FAF7;
+	font-family : Verdana, Arial Greek, Arial, HellasArial, Helvetica;
+	font-size : 8pt;
+	color : #000000;
+}
+
+.m_ag
+{
+	background-color : #E8F4ED;
+	font-family : Verdana, Arial Greek, Arial, HellasArial, Helvetica;
+	font-size : 8pt;
+	color : #000000;
+}
+
+.m_wt
+{
+	padding-left: 2px;
+	font-family : Verdana, Arial Greek, Arial, HellasArial, Helvetica;
+	font-size : 8pt;
+	color : #000000;
+	font-weight: bold;
+	height: 20px;
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#CCE5D9,endColorStr=#F0F8F4); 
+	background-color : #F0F8F4;
+}
+
+.m_bt, .m_bg
+{
+	background-color : #99CCB2;
+}
+
+.m_dbt
+{
+	background-color : #99CCB2;
+	border-top: 1px solid #cccccc;
+	border-left: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	width:80%;
+}
+
+.m_ct
+{
+	background-color : #DBF3E8;
+}
+
+a:link
+{
+	font-weight:normal;
+	font-size: 8pt;
+	color: #000000;
+	font-family: Verdana, Arial Greek, Arial, HellasArial, Helvetica;
+	text-decoration: underline;
+	cursor:hand;
+}
+a:visited
+{
+	font-family : Verdana, Arial Greek, Arial, HellasArial, Helvetica;
+	font-size : 8pt;
+	font-weight: normal;
+	color: #000000;	
+	text-decoration: underline;
+	cursor:hand;
+}
+a:hover
+{
+	font-family : Verdana, Arial Greek, Arial, HellasArial, Helvetica;
+	font-size : 8pt;
+	font-weight: normal;
+	color: #000000;	
+	text-decoration: underline;
+	cursor:hand;
+}
+
+
+.m_toolbar
+{
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=1,startColorStr=#F0F8F4,endColorStr=#CCE5D9); 
+	background: #F0F8F4;
+	height: 26px;
+	border-bottom: 1px solid #cccccc;
+}
+
+.m_topmenu
+{
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#CCE5D9,endColorStr=#F0F8F4);
+	BACKGROUND-COLOR: #F1F3F5;
+
+	border-bottom: 1px solid #cccccc;
+	border-top: 1px solid #cccccc;
+}
+
+.m_dis
+{
+	color:#eeeeee;
+}
+
+.m_error
+{
+	font-family : Verdana, Arial Greek, Arial, HellasArial, Helvetica;
+	font-size : 10px;
+	color : #ff0000;
+}
+
+.navigator, a.navigator:link, a.navigator:visited, a.navigator:hover {
+  text-align: center;
+  font-size: 11px;
+  font-weight: bold;
+  border: 3px double #cccccc;
+  width: auto;
+  background: #F5FAF7;
+  padding: 0px 10px;
+  line-height: 20px;
+  margin: 1px;
+  text-decoration:none;
+}
+
+
+
+/* Hovers Not Working i.e.*/
+OPTION:hover {
+	background-color : #feeefe;
+}
+
+INPUT:hover {
+	background-color : #feeefe;
+}
+
+fieldset {  margin:0px 0; padding:6px; border:1px solid #888888;}
+legend {
+	margin-bottom: 5px;
+	margin-left: -9px;
+	padding-right: 5px;
+	vertical-align: middle;
+	padding-bottom: 3px;
+}
+fieldset > legend {
+	margin-left: -2px;
+}
+
+.m_cg
+{
+	background-color : #000000;
+}
+
+hr
+{
+	height:1;
+}

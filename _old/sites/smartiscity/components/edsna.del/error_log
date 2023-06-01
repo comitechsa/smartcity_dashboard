@@ -1,0 +1,10 @@
+[05-Sep-2017 20:13:03 Europe/Helsinki] PHP Warning:  PHP Startup: homeloader: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20131226
+These options need to match
+ in Unknown on line 0
+[05-Sep-2017 20:13:04 Europe/Helsinki] PHP Warning:  PHP Startup: homeloader: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20131226
+These options need to match
+ in Unknown on line 0

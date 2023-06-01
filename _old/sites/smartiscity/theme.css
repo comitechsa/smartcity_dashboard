@@ -1,0 +1,24 @@
+body, table, td, div { 	}
+body {
+	
+
+}
+.m_n, table { }
+.m_nb { }
+.m_tb {}
+textarea.m_tb {}
+select.m_tb, input[type="file"] {}
+.m_b { }
+.m_bg { }
+.m_cg { }
+.m_hg { }
+.m_ng {}
+.m_ag {}
+.m_error {}
+.m_red {}
+a:link, a:visited{ }
+a:hover {}
+.navigator, a.navigator:link, a.navigator:visited, a.navigator:hover { }
+hr{}
+h1 {}
+h3 {}

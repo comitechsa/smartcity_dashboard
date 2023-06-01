@@ -1,0 +1,21 @@
+<public:component>
+<public:attach event="onfocus" onevent="Focus()" />
+<public:attach event="onblur" onevent="Blur()" />
+
+<script language="javascript">
+	function Focus()
+	{
+		if (this.tagName != "SELECT")
+		{
+			this.style.background = "#feeefe";
+		}
+	}
+	function Blur()
+	{
+		if (this.tagName != "SELECT")
+		{
+			this.style.background = "#ffffff";
+		}	
+	}
+</script>
+</public:component>

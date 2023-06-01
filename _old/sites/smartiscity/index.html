@@ -1,0 +1,49 @@
+ <html>     
+     <head>       
+         <title>Facebook Like Button vs Like Box Event</title>     
+<style>
+p {margin: 10px;color:#336699;}
+.box {float:left; border:1px solid #222; padding:5px; margin: 5px;}
+.info {color:#778999;font-style:italic}
+.fb_like {  
+  overflow: hidden;
+  width: 90px;
+}
+
+</style>
+<script>
+window.fbAsyncInit = function() {
+    FB.init({
+        appId: '328432184027876', //328011467238834
+        status: true,
+        cookie: true,
+        xfbml: true,
+        oauth: true
+    });
+    FB.Event.subscribe('edge.create', function(response) {
+        alert('You liked the URL: ' + response);
+    });
+};
+(function(d) {
+    var js, id = 'facebook-jssdk';
+    if (d.getElementById(id)) {
+        return;
+    }
+    js = d.createElement('script');
+    js.id = id;
+    js.async = true;
+    js.src = "//connect.facebook.net/en_US/all.js";
+    d.getElementsByTagName('head')[0].appendChild(js);
+}(document));
+</script>
+     </head>     
+     <body>       
+         <div id="fb-root"></div> 
+         <div class="box">
+             <p>Please like to login</p>
+             <div class="fb-like" data-href="http://www.wan.gr" data-send="false" data-width="150" data-show-faces="false"></div>
+         </div>
+         <div style="clear:both;"></div>
+     </body>  
+
+</html>

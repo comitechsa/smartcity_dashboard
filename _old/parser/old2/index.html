@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<title>Server-side browser</title>
+<meta http-equiv="KEYWORDS" content="PHP, browser, anonymizer">
+<meta http-equiv="DESCRIPTION" content="A simple PHP script for browsing using intermediate server.">
+<style type="text/css">
+body {background-color: White; font-family: "Times New Roman", Times, serif; font-size: 12pt;}
+.w {color: Black; font-weight: bold;}
+.copy{font-family: Arial, Helvetica, sans-serif; serif; font-size: 8pt;}
+</style>
+</head>
+<body topmargin=0 leftmargin=2>
+<p>
+<span class=w>Welcome</span> to the Personal Anonymizer - server-based web browsing tool.<br>
+</p>
+<form action="frameset.php" method="post" name="URI" id="URI">
+Enter URL you want the to browse:<br>
+<input type="text" name="URI" size="40">
+<input type="submit" value="Go!">
+</form>
+The script will connect to the server that contains URI, get the content and send it to your user agent.<br>
+It will also change links in HTML so you can browse using this script and watch images.
+<br>
+<br>
+<div class="copy">
+Cookies and form sending are not implemented in this version.
+<br>
+Written by Grigori A. Kochanov.<br>
+contacts:<br>
+ICQ 16784688<br>
+email: grigori-at-bi-dot-com-dot-ua
+</div>
+
+</body>
+</html>

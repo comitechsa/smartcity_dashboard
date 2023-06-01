@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 13 Copy 7</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-43.8%" y="-43.8%" width="187.5%" height="187.5%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.801684736   0 0 0 0 0.801684736   0 0 0 0 0.801684736  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-13-Copy-7" filter="url(#filter-1)" transform="translate(3.000000, 1.000000)">
+            <circle id="Oval-Copy-29" fill="#FFFFFF" cx="12" cy="12" r="12"></circle>
+            <g id="Group-7-Copy-2" transform="translate(6.000000, 6.000000)">
+                <circle id="Oval" stroke="#000000" stroke-width="1.3614075" cx="6" cy="6" r="5.4"></circle>
+                <path d="M7.27065001,6.9984846 C7.96518014,5.90177441 8.59454127,4.76532261 9.15552838,3.59503888 C9.23978147,3.41927724 9.0375995,3.23509887 8.85578983,3.32238825 C7.69196016,3.8811592 6.56164099,4.50757637 5.47065001,5.1984846 C4.97645,5.69672058 4.97645,6.50024862 5.47065001,6.9984846 C5.96888599,7.49268462 6.77241404,7.49268462 7.27065001,6.9984846 Z" id="Path" fill="#000000"></path>
+            </g>
+        </g>
+    </g>
+</svg>

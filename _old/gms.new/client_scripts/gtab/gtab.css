@@ -1,0 +1,13 @@
+.tab_border {
+	background-color:#4061A2;
+}
+.tab_content {
+	background-color:#ffffff;
+}
+.tab_header{
+	background-color : #E0DFE3;
+	font-family : Verdana, Tahoma;
+	font-size : 8pt;
+	color : #000000;
+	font-weight: bold
+}

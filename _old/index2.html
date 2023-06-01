@@ -1,0 +1,873 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+<link rel="mask-icon" type="" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+
+
+  <title>CodePen - Windows Metro UI</title>
+  
+  
+  
+  
+<style>
+@import url(https://fonts.googleapis.com/css?family=Gudea);
+
+body {
+	background-color: #312747;
+	margin: auto;
+	font-family: 'Gudea', Arial, sans-serif;
+	overflow: hidden;
+	width: 1600px;
+}
+
+/***************Main************************/
+h1 {
+	color: white;
+	margin: 35px 0 35px 40px;
+	font-size: 32pt;
+	letter-spacing: 4px;
+	width: 900px;
+}
+
+h2 {
+	position: relative;
+	margin: -73px 0 0 1453px;
+	float: left;
+	color: white;
+	font-size: 14pt;
+	letter-spacing: 1px;
+}
+
+header img {
+	position: relative;
+	width: 45px;
+	height: 45px;
+	left: -30px;
+	top: -88px;
+	border-radius: 3px;
+	float: right;
+}
+
+.container {
+	width:800px;
+	padding: 0;
+	margin: 0;
+}
+
+.divblock1 {
+	width: 760px;
+	padding: 0;
+	margin-left: -280px;
+	position: fixed;
+}
+
+.divblock2 {
+	width: 320px;
+	padding: 0;
+	position: fixed;
+	left: 386px;
+}
+
+.divblock3 {
+	width: 320px;
+	padding: 0;
+	position: fixed;
+	left: 729px;
+}
+
+.divblock4 {
+	width: 320px;
+	padding: 0;
+	position: fixed;
+	left: 1070px;
+}
+
+.divblock5 {
+	width: 470px;
+	padding: 0;
+	left: 1383px;
+	position: fixed;
+}
+
+img {
+	padding: 1.2px;
+}
+
+#bigimgsize{
+	width: 307px;
+	height: 150px;
+}
+
+#imgsize {
+	width: 147px;
+	height: 148px;
+}
+
+#vbig {
+	width: 306px;
+	height: 306px;
+}
+
+/***************Screen 1024px************************/
+@media screen and (max-width: 1024px){
+
+h2 {
+	margin: -70px 0 0 890px;
+}
+
+header img {
+	left: -595px;
+	top: -82px;
+}	
+
+.container {
+	width: 1600px;
+	margin-left: -283px;
+}
+
+}
+
+/***************Screen 1280px************************/
+@media screen and (min-width: 1124px) and (max-width: 1280px){
+
+.container {
+	width: 1260px;
+	margin-left: -160px;
+}
+
+h2 {
+	margin: -70px 0 0 1130px;
+}
+
+header img {
+	left: -350px;
+}
+
+}
+
+/***************Screen 1366px************************/
+@media screen and (min-width: 1366px) and (max-width: 1366px){
+
+.container {
+	width: 1120px;
+	margin-left: -115px;
+}
+
+h2 {
+	margin: -70px 0 0 1225px;
+}
+
+header img {
+	left: -260px;
+	top: -82px;
+}	
+
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no" >
+  <head>
+<!--Windows Metro UI for WEB
+  
+  Parallax
+  https://github.com/wagerfield/parallax
+  
+  License
+  http://creativecommons.org/licenses/by-nc-sa/4.0/
+
+  Screen: 
+  1024
+  1280
+  1366
+  1600
+
+  Supported:
+  Chrome 38>
+  Firefox =
+  Ie =
+  Opera =
+-->
+<meta charset="utf-8">
+<title>Windows Metro UI</title>
+<link href=style/main.css rel=stylesheet>
+</head>
+
+<body>
+	<header>
+		<h1>Start</h1>
+     <h2>aai210</h2>
+    <a href="#"><img src="https://lh5.googleusercontent.com/-XErEww-c_oI/VFnrXoiZ4jI/AAAAAAAADqQ/-rkoJZeoXwQ/s60-no/av.png"></a>
+	</header>
+	 <div id="container" class="container" >
+     <ul id="scene" class="scene border fill">
+     <li class="layer expand-width" data-depth="1.00">
+      <div class="divblock1">
+      <!-- Block 1 --><a href="https://www.bing.com/" target="_blank"><img class="aspect" id="bigimgsize" src="https://lh6.googleusercontent.com/INICGP6ftAYrN3JiT60ERHLPO23DOSwDdUlVMUY83A=w300-h150-no"></a>
+      	<a href="https://www.mozilla.org/" target="_blank"><img class="aspect" src="https://lh4.googleusercontent.com/Trl3rjtfEmYb-BU04uyvm0Ow46JV9V44Ib5WfS7F_A=s150-no"></a>
+      	<a href="https://www.google.ru/chrome/browser/" target="_blank"><img class="aspect" src="https://lh3.googleusercontent.com/-wMfhIgMItEI/VFnrYPUrG8I/AAAAAAAADqg/8vU1exohgbI/s150-no/Chrome.png"></a>
+      	<a href="https://drive.google.com/" target="_blank"><img class="aspect" src="https://lh6.googleusercontent.com/-ALj8e1OkoFg/VFnrYgi6gXI/AAAAAAAADsI/T0yPeKFyoZA/s150-no/drive.png"></a>
+
+      	<a href="https://www.origin.com/" target="_blank"><img class="aspect" src="https://lh4.googleusercontent.com/z8rK_ghEF3Clkk3LYgpEemQ3ObQAonnOWGqHJqzNhA=s150-no"></a>
+      	<a href="https://github.com/" target="_blank"><img class="aspect" id="imgbig" src="https://lh4.googleusercontent.com/-0vIKAtakHyA/VFnrSqc-p5I/AAAAAAAADsk/Mg-YisvmLqg/s150-no/Github.png"></a>
+      	<a href="https://facebook.com/" target="_blank"><img class="aspect" id="imgbig" src="https://lh6.googleusercontent.com/-vLyW3MN9-To/VFnrZaBT5fI/AAAAAAAADqw/DW0inPxDeD4/s150-no/facebook.png"></a>
+      	<a href="https://dribbble.com/" target="_blank"><img class="aspect" src="https://lh3.googleusercontent.com/-mCs-R_yxoeA/VFnrf9csu_I/AAAAAAAADsU/dwxmNElRFjA/s150-no/dribbble.png"></a>
+      	<a href="https://www.deviantart.com/" target="_blank"><img class="aspect" src="https://lh3.googleusercontent.com/PzapSzSTXzA9_RH5uFrJZ22eV2mmyy9UsES0mb656A=s150-no"></a>
+        
+        <a href="https://instagram.com/" target="_blank"><img class="aspect" src="https://lh4.googleusercontent.com/-_VktnSdZs_0/VFnraQjhZII/AAAAAAAADq8/8qOlqoc9zH4/s150-no/instagram.png"></a>
+        <a href="https://twitter.com/" target="_blank"><img class="aspect" src="https://lh4.googleusercontent.com/-Gxvefse7k48/VFnrdBf8lOI/AAAAAAAADr4/rphofSigUcE/s150-no/twitter.png"></a>
+        <a href="https://www.behance.net/" target="_blank"><img class="aspect" src="https://lh4.googleusercontent.com/-LmvFFc3ihNU/VFnrQxtzOZI/AAAAAAAADsY/kIh8bst1hek/s150-no/Behance.png"></a>
+        <a href="https://pinterest.com/" target="_blank"><img class="aspect" src="https://lh3.googleusercontent.com/-rSWl9QzqKlE/VFnrTgQRAtI/AAAAAAAADpM/otzM6gUtmu0/s150-no/Pinterest.png"></a>
+        <a href="https://www.tumblr.com/" target="_blank"><img class="aspect" src="https://lh4.googleusercontent.com/-U10gpNbBvLg/VFnrc6j_jKI/AAAAAAAADsA/8146DufX5LU/s150-no/tumblr.png"></a>
+     	</div>
+    </li>
+   	  
+    <!-- Block 1.1 --><li class="layer expand-width" data-depth="1.00">
+      <div class="divblock2">
+        <a href="#"><img class="aspect" id="vbig" src="https://lh5.googleusercontent.com/-Qivp6PALews/VFnrcBP0EVI/AAAAAAAADsE/QX6_oNFG4Ww/s300-no/traveling.png"></a>
+        <a href="#"><img class="aspect" id="bigimgsize" src="https://lh5.googleusercontent.com/-jnZk1cgy334/VFnrXb4-gdI/AAAAAAAADsk/rPCfVd0Al2A/w300-h150-no/autumn.png"></a>
+      </div>
+    </li>
+
+	  <li class="layer expand-width" data-depth="1.00">
+    <!-- Block 2 -->  <div class="divblock3">
+      	<a href="#"><img class="aspect" id="bigimgsize" src="https://lh5.googleusercontent.com/egthw12StIRIp8Am2fZ51JpfOuqpe1G7h9F3Fqx9EQ=w300-h150-no"></a>
+      	<a href="https://www.nytimes.com/" target="_blank"><img class="aspect" src="https://lh5.googleusercontent.com/-4Off2uBdJB0/VFnrV5h8POI/AAAAAAAADpw/B1rXmVZyyjk/s150-no/Times.png"></a>
+        <a href="http://www.foxnews.com/" target="_blank"><img class="aspect" src="https://lh3.googleusercontent.com/-dX9vI0qGh_I/VFnrSmAxriI/AAAAAAAADsk/I4fy3-d0IsM/s150-no/FoxNews.png"></a>
+        
+        <a href="#"><img class="aspect" src="https://lh4.googleusercontent.com/-kTA5RNzBtOs/VFnrccK96tI/AAAAAAAADrk/qUw_WHSducM/s150-no/rss.png"></a>
+        <a href="#"><img class="aspect" src="https://lh5.googleusercontent.com/-tnFM2OmGAog/VFnrQkj30jI/AAAAAAAADoY/saPM87xfeAg/s150-no/Bookmarks.png"></a>
+      </div>
+    </li>
+
+     <!-- Block 3 --><li class="layer expand-width" data-depth="1.00">
+      <div class="divblock4">
+        <a href="https://www.evernote.com/" target="_blank"><img class="aspect" src="https://lh4.googleusercontent.com/-2Tw2bHcizpU/VFnrY84TE4I/AAAAAAAADqo/O-6VisfRSB4/s150-no/evernote.png"></a>
+        <a href="https://www.dropbox.com" target="_blank"><img class="aspect" src="https://lh5.googleusercontent.com/-5130s-apGBg/VFnrR8L24wI/AAAAAAAADsk/0BsXusl2m7A/s150-no/Dropbox.png"></a>
+        <a href="#"><img class="aspect" id="vbig" src="https://lh6.googleusercontent.com/-9MgYJs12i_A/VFnrdZ9QIKI/AAAAAAAADr0/-adtIcXLpAc/s300-no/weather.png"></a>
+        <a href="http://www.rdio.com" target="_blank"><img class="aspect" src="https://lh4.googleusercontent.com/-HVvRluUTPok/VFnrTwhjYfI/AAAAAAAADpg/UeT83qPme9M/s150-no/Rdio.png"></a>
+        <a href="https://www.lightwave3d.com/" target="_blank"><img class="aspect" src="https://lh4.googleusercontent.com/MA8sLqStU2UpBvoVAwuASQr1wW5-RqA_oztX_TYhSg=s150-no"></a>
+      </div>
+    </li>
+
+    <!-- Block 3.1 --><li class="layer expand-width" data-depth="1.00">
+        <div class="divblock5">
+          <a href="#" target="_blank"><img class="aspect" src="https://lh6.googleusercontent.com/-oINRhCDzNnQ/VFnrbjnIMcI/AAAAAAAADrU/lOEegU4NpDw/s150-no/photostwo.png"></a>
+          <a href="https://www.wikipedia.org/" target="_blank"><img class="aspect" src="https://lh6.googleusercontent.com/JCR9Tn5nvpXKIMA--IegxJjRupzn3InrZGrTzcIqcg=s150-no"></a>
+          <a href="https://www.yahoo.com/" target="_blank"><img class="aspect" src="https://lh3.googleusercontent.com/-8U0UC08oOsY/VFnrWp8TxlI/AAAAAAAADqA/rq5yvMma-hk/s150-no/Yahoo.png"></a>
+          <a href="https://www.mediafire.com/" target="_blank"><img class="aspect" src="https://lh6.googleusercontent.com/gKOM9kRh_JZkVjVerrqReeEcf-HSsECKDchnRF-BKw=s150-no"></a>
+          <a href="http://www.crunchyroll.com/" target="_blank"><img class="aspect" src="https://lh5.googleusercontent.com/-Ob6gfrMh6VI/VFnrRc2Wd7I/AAAAAAAADos/ZlPJ7Q6TnhE/s150-no/Crunchyroll.png"></a>
+
+          <a href="https://www.spotify.com/" target="_blank"><img class="aspect" src="https://lh3.googleusercontent.com/-AcYwgxRXBxA/VFnrUbwG2eI/AAAAAAAADpY/fKIyJeeH_eg/s150-no/Spotify.png"></a>
+          <a href="#"><img class="aspect" id="bigimgsize" src="https://lh4.googleusercontent.com/-OGjkhnVma6Y/VFnrVKFOBMI/AAAAAAAADp4/JFHJ7s5DUXA/w300-h150-no/TV.png"></a>
+          <a href="#"><img class="aspect" src="https://lh5.googleusercontent.com/-O_SolO-dq3A/VFnrVUGIVmI/AAAAAAAADpk/YDdlLKVrjA0/s150-no/Tasks.png"></a>
+          <a href="https://flipboard.com/" target="_blank"><img class="aspect" src="https://lh3.googleusercontent.com/-oVyKRDrgVKk/VFnrSHn9g_I/AAAAAAAADsk/G-vJEJXarIQ/s150-no/Flipboard.png"></a>
+          <a href="https://www.ubuntu.com/" target="_blank"><img class="aspect" src="https://lh5.googleusercontent.com/8JmuxZUtHLC6cmZm7CQW6-yQLFUsrHFBLDQpEM5x5w=s150-no"></a>
+       	</div>
+    </li>
+
+     </ul>
+  </div>
+</body>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+
+  
+      <script id="rendered-js" >
+//============================================================
+//
+// The MIT License
+//
+// Copyright (C) 2014 Matthew Wagerfield - @wagerfield
+//
+// Permission is hereby granted, free of charge, to any
+// person obtaining a copy of this software and associated
+// documentation files (the "Software"), to deal in the
+// Software without restriction, including without limitation
+// the rights to use, copy, modify, merge, publish, distribute,
+// sublicense, and/or sell copies of the Software, and to
+// permit persons to whom the Software is furnished to do
+// so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice
+// shall be included in all copies or substantial portions
+// of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY
+// OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+// LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+// FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO
+// EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE
+// FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN
+// AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
+// OR OTHER DEALINGS IN THE SOFTWARE.
+//
+//============================================================
+
+/**
+ * Parallax.js
+ * @author Matthew Wagerfield - @wagerfield
+ * @description Creates a parallax effect between an array of layers,
+ *              driving the motion from the gyroscope output of a smartdevice.
+ *              If no gyroscope is available, the cursor position is used.
+ */
+;(function (window, document, undefined) {
+
+  // Strict Mode
+  'use strict';
+
+  // Constants
+  var NAME = 'Parallax';
+  var MAGIC_NUMBER = 30;
+  var DEFAULTS = {
+    relativeInput: false,
+    clipRelativeInput: false,
+    calibrationThreshold: 100,
+    calibrationDelay: 500,
+    supportDelay: 500,
+    calibrateX: true,
+    calibrateY: true,
+    invertX: true,
+    invertY: true,
+    limitX: false,
+    limitY: false,
+    scalarX: 35.0,
+    scalarY: 0.0,
+    frictionX: 0.1,
+    frictionY: 0.1,
+    originX: 0.5,
+    originY: 0.5 };
+
+
+  function Parallax(element, options) {
+
+    // DOM Context
+    this.element = element;
+    this.layers = element.getElementsByClassName('layer');
+
+    // Data Extraction
+    var data = {
+      calibrateX: this.data(this.element, 'calibrate-x'),
+      calibrateY: this.data(this.element, 'calibrate-y'),
+      invertX: this.data(this.element, 'invert-x'),
+      invertY: this.data(this.element, 'invert-y'),
+      limitX: this.data(this.element, 'limit-x'),
+      limitY: this.data(this.element, 'limit-y'),
+      scalarX: this.data(this.element, 'scalar-x'),
+      scalarY: this.data(this.element, 'scalar-y'),
+      frictionX: this.data(this.element, 'friction-x'),
+      frictionY: this.data(this.element, 'friction-y'),
+      originX: this.data(this.element, 'origin-x'),
+      originY: this.data(this.element, 'origin-y') };
+
+
+    // Delete Null Data Values
+    for (var key in data) {
+      if (data[key] === null) delete data[key];
+    }
+
+    // Compose Settings Object
+    this.extend(this, DEFAULTS, options, data);
+
+    // States
+    this.calibrationTimer = null;
+    this.calibrationFlag = true;
+    this.enabled = false;
+    this.depths = [];
+    this.raf = null;
+
+    // Element Bounds
+    this.bounds = null;
+    this.ex = 0;
+    this.ey = 0;
+    this.ew = 0;
+    this.eh = 0;
+
+    // Element Center
+    this.ecx = 0;
+    this.ecy = 0;
+
+    // Element Range
+    this.erx = 0;
+    this.ery = 0;
+
+    // Calibration
+    this.cx = 0;
+    this.cy = 0;
+
+    // Input
+    this.ix = 0;
+    this.iy = 0;
+
+    // Motion
+    this.mx = 0;
+    this.my = 0;
+
+    // Velocity
+    this.vx = 0;
+    this.vy = 0;
+
+    // Callbacks
+    this.onMouseMove = this.onMouseMove.bind(this);
+    this.onDeviceOrientation = this.onDeviceOrientation.bind(this);
+    this.onOrientationTimer = this.onOrientationTimer.bind(this);
+    this.onCalibrationTimer = this.onCalibrationTimer.bind(this);
+    this.onAnimationFrame = this.onAnimationFrame.bind(this);
+    this.onWindowResize = this.onWindowResize.bind(this);
+
+    // Initialise
+    this.initialise();
+  }
+
+  Parallax.prototype.extend = function () {
+    if (arguments.length > 1) {
+      var master = arguments[0];
+      for (var i = 1, l = arguments.length; i < l; i++) {
+        var object = arguments[i];
+        for (var key in object) {
+          master[key] = object[key];
+        }
+      }
+    }
+  };
+
+  Parallax.prototype.data = function (element, name) {
+    return this.deserialize(element.getAttribute('data-' + name));
+  };
+
+  Parallax.prototype.deserialize = function (value) {
+    if (value === "true") {
+      return true;
+    } else if (value === "false") {
+      return false;
+    } else if (value === "null") {
+      return null;
+    } else if (!isNaN(parseFloat(value)) && isFinite(value)) {
+      return parseFloat(value);
+    } else {
+      return value;
+    }
+  };
+
+  Parallax.prototype.camelCase = function (value) {
+    return value.replace(/-+(.)?/g, function (match, character) {
+      return character ? character.toUpperCase() : '';
+    });
+  };
+
+  Parallax.prototype.transformSupport = function (value) {
+    var element = document.createElement('div');
+    var propertySupport = false;
+    var propertyValue = null;
+    var featureSupport = false;
+    var cssProperty = null;
+    var jsProperty = null;
+    for (var i = 0, l = this.vendors.length; i < l; i++) {
+      if (this.vendors[i] !== null) {
+        cssProperty = this.vendors[i][0] + 'transform';
+        jsProperty = this.vendors[i][1] + 'Transform';
+      } else {
+        cssProperty = 'transform';
+        jsProperty = 'transform';
+      }
+      if (element.style[jsProperty] !== undefined) {
+        propertySupport = true;
+        break;
+      }
+    }
+    switch (value) {
+      case '2D':
+        featureSupport = propertySupport;
+        break;
+      case '3D':
+        if (propertySupport) {
+          var body = document.body || document.createElement('body');
+          var documentElement = document.documentElement;
+          var documentOverflow = documentElement.style.overflow;
+          if (!document.body) {
+            documentElement.style.overflow = 'hidden';
+            documentElement.appendChild(body);
+            body.style.overflow = 'hidden';
+            body.style.background = '';
+          }
+          body.appendChild(element);
+          element.style[jsProperty] = 'translate3d(1px,1px,1px)';
+          propertyValue = window.getComputedStyle(element).getPropertyValue(cssProperty);
+          featureSupport = propertyValue !== undefined && propertyValue.length > 0 && propertyValue !== "none";
+          documentElement.style.overflow = documentOverflow;
+          body.removeChild(element);
+        }
+        break;}
+
+    return featureSupport;
+  };
+
+  Parallax.prototype.ww = null;
+  Parallax.prototype.wh = null;
+  Parallax.prototype.wcx = null;
+  Parallax.prototype.wcy = null;
+  Parallax.prototype.wrx = null;
+  Parallax.prototype.wry = null;
+  Parallax.prototype.portrait = null;
+  Parallax.prototype.desktop = !navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|BB10|mobi|tablet|opera mini|nexus 7)/i);
+  Parallax.prototype.vendors = [null, ['-webkit-', 'webkit'], ['-moz-', 'Moz'], ['-o-', 'O'], ['-ms-', 'ms']];
+  Parallax.prototype.motionSupport = !!window.DeviceMotionEvent;
+  Parallax.prototype.orientationSupport = !!window.DeviceOrientationEvent;
+  Parallax.prototype.orientationStatus = 0;
+  Parallax.prototype.transform2DSupport = Parallax.prototype.transformSupport('2D');
+  Parallax.prototype.transform3DSupport = Parallax.prototype.transformSupport('3D');
+  Parallax.prototype.propertyCache = {};
+
+  Parallax.prototype.initialise = function () {
+
+    // Configure Context Styles
+    if (this.transform3DSupport) this.accelerate(this.element);
+    var style = window.getComputedStyle(this.element);
+    if (style.getPropertyValue('position') === 'static') {
+      this.element.style.position = 'relative';
+    }
+
+    // Setup
+    this.updateLayers();
+    this.updateDimensions();
+    this.enable();
+    this.queueCalibration(this.calibrationDelay);
+  };
+
+  Parallax.prototype.updateLayers = function () {
+
+    // Cache Layer Elements
+    this.layers = this.element.getElementsByClassName('layer');
+    this.depths = [];
+
+    // Configure Layer Styles
+    for (var i = 0, l = this.layers.length; i < l; i++) {
+      var layer = this.layers[i];
+      if (this.transform3DSupport) this.accelerate(layer);
+      layer.style.position = i ? 'absolute' : 'relative';
+      layer.style.display = 'block';
+      layer.style.left = 0;
+      layer.style.top = 0;
+
+      // Cache Layer Depth
+      this.depths.push(this.data(layer, 'depth') || 0);
+    }
+  };
+
+  Parallax.prototype.updateDimensions = function () {
+    this.ww = window.innerWidth;
+    this.wh = window.innerHeight;
+    this.wcx = this.ww * this.originX;
+    this.wcy = this.wh * this.originY;
+    this.wrx = Math.max(this.wcx, this.ww - this.wcx);
+    this.wry = Math.max(this.wcy, this.wh - this.wcy);
+  };
+
+  Parallax.prototype.updateBounds = function () {
+    this.bounds = this.element.getBoundingClientRect();
+    this.ex = this.bounds.left;
+    this.ey = this.bounds.top;
+    this.ew = this.bounds.width;
+    this.eh = this.bounds.height;
+    this.ecx = this.ew * this.originX;
+    this.ecy = this.eh * this.originY;
+    this.erx = Math.max(this.ecx, this.ew - this.ecx);
+    this.ery = Math.max(this.ecy, this.eh - this.ecy);
+  };
+
+  Parallax.prototype.queueCalibration = function (delay) {
+    clearTimeout(this.calibrationTimer);
+    this.calibrationTimer = setTimeout(this.onCalibrationTimer, delay);
+  };
+
+  Parallax.prototype.enable = function () {
+    if (!this.enabled) {
+      this.enabled = true;
+      if (this.orientationSupport) {
+        this.portrait = null;
+        window.addEventListener('deviceorientation', this.onDeviceOrientation);
+        setTimeout(this.onOrientationTimer, this.supportDelay);
+      } else {
+        this.cx = 0;
+        this.cy = 0;
+        this.portrait = false;
+        window.addEventListener('mousemove', this.onMouseMove);
+      }
+      window.addEventListener('resize', this.onWindowResize);
+      this.raf = requestAnimationFrame(this.onAnimationFrame);
+    }
+  };
+
+  Parallax.prototype.disable = function () {
+    if (this.enabled) {
+      this.enabled = false;
+      if (this.orientationSupport) {
+        window.removeEventListener('deviceorientation', this.onDeviceOrientation);
+      } else {
+        window.removeEventListener('mousemove', this.onMouseMove);
+      }
+      window.removeEventListener('resize', this.onWindowResize);
+      cancelAnimationFrame(this.raf);
+    }
+  };
+
+  Parallax.prototype.calibrate = function (x, y) {
+    this.calibrateX = x === undefined ? this.calibrateX : x;
+    this.calibrateY = y === undefined ? this.calibrateY : y;
+  };
+
+  Parallax.prototype.invert = function (x, y) {
+    this.invertX = x === undefined ? this.invertX : x;
+    this.invertY = y === undefined ? this.invertY : y;
+  };
+
+  Parallax.prototype.friction = function (x, y) {
+    this.frictionX = x === undefined ? this.frictionX : x;
+    this.frictionY = y === undefined ? this.frictionY : y;
+  };
+
+  Parallax.prototype.scalar = function (x, y) {
+    this.scalarX = x === undefined ? this.scalarX : x;
+    this.scalarY = y === undefined ? this.scalarY : y;
+  };
+
+  Parallax.prototype.limit = function (x, y) {
+    this.limitX = x === undefined ? this.limitX : x;
+    this.limitY = y === undefined ? this.limitY : y;
+  };
+
+  Parallax.prototype.origin = function (x, y) {
+    this.originX = x === undefined ? this.originX : x;
+    this.originY = y === undefined ? this.originY : y;
+  };
+
+  Parallax.prototype.clamp = function (value, min, max) {
+    value = Math.max(value, min);
+    value = Math.min(value, max);
+    return value;
+  };
+
+  Parallax.prototype.css = function (element, property, value) {
+    var jsProperty = this.propertyCache[property];
+    if (!jsProperty) {
+      for (var i = 0, l = this.vendors.length; i < l; i++) {
+        if (this.vendors[i] !== null) {
+          jsProperty = this.camelCase(this.vendors[i][1] + '-' + property);
+        } else {
+          jsProperty = property;
+        }
+        if (element.style[jsProperty] !== undefined) {
+          this.propertyCache[property] = jsProperty;
+          break;
+        }
+      }
+    }
+    element.style[jsProperty] = value;
+  };
+
+  Parallax.prototype.accelerate = function (element) {
+    this.css(element, 'transform', 'translate3d(0,0,0)');
+    this.css(element, 'transform-style', 'preserve-3d');
+    this.css(element, 'backface-visibility', 'hidden');
+  };
+
+  Parallax.prototype.setPosition = function (element, x, y) {
+    x += 'px';
+    y += 'px';
+    if (this.transform3DSupport) {
+      this.css(element, 'transform', 'translate3d(' + x + ',' + y + ',0)');
+    } else if (this.transform2DSupport) {
+      this.css(element, 'transform', 'translate(' + x + ',' + y + ')');
+    } else {
+      element.style.left = x;
+      element.style.top = y;
+    }
+  };
+
+  Parallax.prototype.onOrientationTimer = function (event) {
+    if (this.orientationSupport && this.orientationStatus === 0) {
+      this.disable();
+      this.orientationSupport = false;
+      this.enable();
+    }
+  };
+
+  Parallax.prototype.onCalibrationTimer = function (event) {
+    this.calibrationFlag = true;
+  };
+
+  Parallax.prototype.onWindowResize = function (event) {
+    this.updateDimensions();
+  };
+
+  Parallax.prototype.onAnimationFrame = function () {
+    this.updateBounds();
+    var dx = this.ix - this.cx;
+    var dy = this.iy - this.cy;
+    if (Math.abs(dx) > this.calibrationThreshold || Math.abs(dy) > this.calibrationThreshold) {
+      this.queueCalibration(0);
+    }
+    if (this.portrait) {
+      this.mx = this.calibrateX ? dy : this.iy;
+      this.my = this.calibrateY ? dx : this.ix;
+    } else {
+      this.mx = this.calibrateX ? dx : this.ix;
+      this.my = this.calibrateY ? dy : this.iy;
+    }
+    this.mx *= this.ew * (this.scalarX / 100);
+    this.my *= this.eh * (this.scalarY / 100);
+    if (!isNaN(parseFloat(this.limitX))) {
+      this.mx = this.clamp(this.mx, -this.limitX, this.limitX);
+    }
+    if (!isNaN(parseFloat(this.limitY))) {
+      this.my = this.clamp(this.my, -this.limitY, this.limitY);
+    }
+    this.vx += (this.mx - this.vx) * this.frictionX;
+    this.vy += (this.my - this.vy) * this.frictionY;
+    for (var i = 0, l = this.layers.length; i < l; i++) {
+      var layer = this.layers[i];
+      var depth = this.depths[i];
+      var xOffset = this.vx * depth * (this.invertX ? -1 : 1);
+      var yOffset = this.vy * depth * (this.invertY ? -1 : 1);
+      this.setPosition(layer, xOffset, yOffset);
+    }
+    this.raf = requestAnimationFrame(this.onAnimationFrame);
+  };
+
+  Parallax.prototype.onDeviceOrientation = function (event) {
+
+    // Validate environment and event properties.
+    if (!this.desktop && event.beta !== null && event.gamma !== null) {
+
+      // Set orientation status.
+      this.orientationStatus = 1;
+
+      // Extract Rotation
+      var x = (event.beta || 0) / MAGIC_NUMBER; //  -90 :: 90
+      var y = (event.gamma || 0) / MAGIC_NUMBER; // -180 :: 180
+
+      // Detect Orientation Change
+      var portrait = this.wh > this.ww;
+      if (this.portrait !== portrait) {
+        this.portrait = portrait;
+        this.calibrationFlag = true;
+      }
+
+      // Set Calibration
+      if (this.calibrationFlag) {
+        this.calibrationFlag = false;
+        this.cx = x;
+        this.cy = y;
+      }
+
+      // Set Input
+      this.ix = x;
+      this.iy = y;
+    }
+  };
+
+  Parallax.prototype.onMouseMove = function (event) {
+
+    // Cache mouse coordinates.
+    var clientX = event.clientX;
+    var clientY = event.clientY;
+
+    // Calculate Mouse Input
+    if (!this.orientationSupport && this.relativeInput) {
+
+      // Clip mouse coordinates inside element bounds.
+      if (this.clipRelativeInput) {
+        clientX = Math.max(clientX, this.ex);
+        clientX = Math.min(clientX, this.ex + this.ew);
+        clientY = Math.max(clientY, this.ey);
+        clientY = Math.min(clientY, this.ey + this.eh);
+      }
+
+      // Calculate input relative to the element.
+      this.ix = (clientX - this.ex - this.ecx) / this.erx;
+      this.iy = (clientY - this.ey - this.ecy) / this.ery;
+
+    } else {
+
+      // Calculate input relative to the window.
+      this.ix = (clientX - this.wcx) / this.wrx;
+      this.iy = (clientY - this.wcy) / this.wry;
+    }
+  };
+
+  // Expose Parallax
+  window[NAME] = Parallax;
+
+})(window, document);
+
+/**
+ * Request Animation Frame Polyfill.
+ * @author Tino Zijdel
+ * @author Paul Irish
+ * @see https://gist.github.com/paulirish/1579671
+ */
+;(function () {
+
+  var lastTime = 0;
+  var vendors = ['ms', 'moz', 'webkit', 'o'];
+
+  for (var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+    window.requestAnimationFrame = window[vendors[x] + 'RequestAnimationFrame'];
+    window.cancelAnimationFrame = window[vendors[x] + 'CancelAnimationFrame'] || window[vendors[x] + 'CancelRequestAnimationFrame'];
+  }
+
+  if (!window.requestAnimationFrame) {
+    window.requestAnimationFrame = function (callback, element) {
+      var currTime = new Date().getTime();
+      var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+      var id = window.setTimeout(function () {callback(currTime + timeToCall);},
+      timeToCall);
+      lastTime = currTime + timeToCall;
+      return id;
+    };
+  }
+
+  if (!window.cancelAnimationFrame) {
+    window.cancelAnimationFrame = function (id) {
+      clearTimeout(id);
+    };
+  }
+
+})();
+
+var scene = document.getElementById('scene');
+var parallax = new Parallax(scene);
+//# sourceURL=pen.js
+    </script>
+
+  
+
+</body>
+
+</html>
+ 

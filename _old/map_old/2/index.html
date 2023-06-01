@@ -1,0 +1,150 @@
+<html>
+	<head>
+		<style>
+			html,
+			body,
+			#map {
+			  height: 100%;
+			  padding: 0;
+			  margin: 0;
+			}
+			.cluster {
+			  display: table;
+			  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.5);
+			}
+			.cluster img {
+			  display: none
+			}
+			.cluster div {
+			  color: inherit !important;
+			  display: table-cell;
+			  vertical-align: middle;
+			  width: 100% !important;
+			  height: 100% !important;
+			  line-height: inherit !important;
+			}
+			/*custom cluster-styles*/
+
+			.cluster_red {
+			  background: rgba(255,0,0,0.3);
+			  width:50px !important;
+			  height:50px !important;
+			}
+			.cluster_gold {
+			  background: rgba(0,255,0,0.3);
+			  width:50px !important;
+			  height:50px !important;
+			}
+			.cluster_blue {
+			  background: rgba(0,0,255,0.3);
+			  width:50px !important;
+			  height:50px !important;
+			}
+		</style>
+		<!--<script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyA6UnD24XXh-EbaMJmJMqM2YbgMarMjcAE"></script>-->
+		<script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyAzYeS10uHq9OvcW4G3NKRoNT3AJmt1RI0"></script>
+		
+		<!--
+		<script src="https://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerclustererplus/src/markerclusterer.js"></script>
+		<script src="markerclustererplus.js"></script>
+		-->
+		<script src="markerclusterer.js"></script>
+	</head>
+	<body>	
+		<div id="map"></div>
+		<script type="text/javascript">
+			ClusterIcon.prototype.createCss = function(pos) {
+				var size = Math.min(this.cluster_.getMarkers().length * 10,
+					100 //possible max-size of a cluster-icon
+				),
+
+				style = ['border-radius : 90%',
+					'line-height   : ' + size + 'px',
+					'cursor        : pointer',
+					'position      : absolute',
+					'top           : ' + pos.y + 'px !important',
+					'left          : ' + pos.x + 'px !important',
+					'width         : ' + size + 'px !important',
+					'height        : ' + size + 'px !important'
+				];
+				return style.join(";") + ';';
+			};
+
+			function randPos() {
+				return new google.maps.LatLng(((Math.random() * 16000 - 8000) / 100), ((Math.random() * 34000 - 17000) / 100));
+			}
+
+			function initialize() {
+				var center = new google.maps.LatLng(37.4419, -122.1419);
+
+				var map = new google.maps.Map(document.getElementById('map'), {
+					zoom: 1,
+					center: center,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				});
+				//var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+				var infoWin = new google.maps.InfoWindow();
+
+				var groups = {
+					a: {
+						markers: [],
+						mc: null,
+						color: 'red'
+					}
+					//,
+					//b: {
+					//	markers: [],
+					//	mc: null,
+					//	color: 'gold'
+					//},
+					//c: {
+					//	markers: [],
+					//	mc: null,
+					//	color: 'purple'
+					//}
+				};
+				var markers = [];
+				var InfoWindows = new google.maps.InfoWindow({});
+		
+				//for (var k in groups) {
+					for (var i = 0; i < 100; ++i) {
+						var pos=randPos();
+						
+						 var marker1 = new google.maps.Marker({
+							position: pos,
+							icon: '/map/2/icons8-marker-16.png',
+							map: map,
+							title: 'Uluru (Ayers Rock)'
+						  });
+						marker1.addListener('click', function() {
+							InfoWindows.open(map, this);
+							InfoWindows.setContent('Test infowindow text message');
+						});
+						//groups[k].markers.push(marker1);  
+						markers.push(marker1);  
+						/*
+						groups[k].markers.push(new google.maps.Marker({
+							map: map,
+							//icon: '/map/2/icons8-green.png',
+							//iconBase + 'parking_lot_maps.png',
+							icon: '/map/2/icons8-marker-16.png',
+							title: 'test11', 
+							//position: randPos()
+							position: pos
+						}));						
+						*/
+					}
+					//groups[k].mc = new MarkerClusterer(map,
+					var markerCluster = new MarkerClusterer(map,
+						//groups[k].markers, {
+						markers, {
+						enableRetinaIcons: true,
+						//clusterClass: 'cluster cluster_' + groups[k].color
+						clusterClass: 'cluster cluster_blue'
+					});
+				//}
+			}
+			google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+	</body>
+</html>

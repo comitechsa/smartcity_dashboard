@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 11 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-43.8%" y="-43.8%" width="187.5%" height="187.5%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.801684736   0 0 0 0 0.801684736   0 0 0 0 0.801684736  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-11-Copy" filter="url(#filter-1)" transform="translate(3.000000, 1.000000)">
+            <g id="Group-11-Copy-22" fill="#FFFFFF">
+                <circle id="Oval-Copy-11" cx="12" cy="12" r="12"></circle>
+            </g>
+            <path d="M5.02289871,15.7241379 L5.02289871,9.05051185 L6.73221983,9.05051185 L6.73221983,10.1233836 L6.84132543,10.1233836 C7.15045797,9.37176724 7.82933728,8.90503772 8.81734914,8.90503772 C10.3023976,8.90503772 11.1025054,9.81425108 11.1025054,11.4084052 L11.1025054,15.7241379 L9.33863147,15.7241379 L9.33863147,11.8084591 C9.33863147,10.8689386 8.94463901,10.3779634 8.10816272,10.3779634 C7.28987069,10.3779634 6.78677263,10.9598599 6.78677263,11.8630119 L6.78677263,15.7241379 L5.02289871,15.7241379 Z M15.7758621,15.8635506 C13.7210399,15.8635506 12.4845097,14.5603448 12.4845097,12.3842942 C12.4845097,10.2264278 13.7392241,8.90503772 15.7758621,8.90503772 C17.8125,8.90503772 19.0672144,10.2203664 19.0672144,12.3842942 C19.0672144,14.5664062 17.8306843,15.8635506 15.7758621,15.8635506 Z M15.7758621,14.4694235 C16.7153825,14.4694235 17.2548491,13.7056843 17.2548491,12.3842942 C17.2548491,11.0750269 16.7093211,10.3052263 15.7758621,10.3052263 C14.8363416,10.3052263 14.296875,11.0750269 14.296875,12.3842942 C14.296875,13.7056843 14.8302802,14.4694235 15.7758621,14.4694235 Z" id="no" fill="#000000"></path>
+        </g>
+    </g>
+</svg>

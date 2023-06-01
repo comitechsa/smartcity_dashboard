@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="29px" viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 11 Copy 6</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons" transform="translate(-59.000000, -135.000000)">
+            <g id="Group-11-Copy-6" transform="translate(59.000000, 135.000000)">
+                <circle id="Oval-Copy-11" fill="#FFFFFF" cx="14.5" cy="14.5" r="14.5"></circle>
+                <g id="Group-6-Copy-2" transform="translate(9.666667, 6.041667)" stroke="#000000" stroke-width="1.79976431">
+                    <g id="Group-3" transform="translate(0.000000, 0.400130)">
+                        <path d="M4.83333333,9.72226992 L4.83333333,6.04820314" id="Line-2" stroke-linecap="square"></path>
+                        <ellipse id="Oval" fill="#000000" cx="4.83333333" cy="10.9226599" rx="1.20833333" ry="1.20039001"></ellipse>
+                        <path d="M1.20833333,7.74663875 L1.20833333,3.59952863 C1.20833333,1.61156386 2.81989719,1.53575961e-13 4.80786196,1.53210777e-13 L4.85880471,1.53210777e-13 C6.84676947,1.52845594e-13 8.45833333,1.61156386 8.45833333,3.59952863 L8.45833333,7.74663875 C9.21035579,8.59307361 9.66666667,9.70492852 9.66666667,10.9226599 C9.66666667,13.5744883 7.50270962,15.72422 4.83333333,15.72422 C2.16395704,15.72422 0,13.5744883 0,10.9226599 C0,9.70492852 0.456310878,8.59307361 1.20833333,7.74663875 Z" id="Combined-Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

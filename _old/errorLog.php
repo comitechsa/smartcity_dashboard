@@ -1,0 +1,4 @@
+﻿
+<?/*PDO / sql_db	2021-05-25 13:59:03	79.103.19.103@drama.smartiscity.gr (/index.php?)	 	connection open	SQLSTATE[HY000] [1045] Access denied for user 'scities'@'localhost' (using password: YES)*/?>
+<?/*PDO / sql_db	2021-05-25 13:59:10	79.103.19.103@drama.smartiscity.gr (/index.php?)	 	connection open	SQLSTATE[HY000] [1045] Access denied for user 'scities'@'localhost' (using password: YES)*/?>
+<?/*PDO / sql_db	2021-05-25 13:59:31	79.166.225.206@drama.smartiscity.gr (/index.php?com=search&type=1)	 	connection open	SQLSTATE[HY000] [1045] Access denied for user 'scities'@'localhost' (using password: YES)*/?>

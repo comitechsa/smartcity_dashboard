@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+
+	<title>Google Maps API</title>
+
+	<style type="text/css">
+
+	#map-div {
+		width: 700px;
+		height: 400px;
+	}
+
+	</style>
+
+	<!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>-->
+
+
+	</head>
+	<body>
+
+		<div id="map-div"></div>
+	<br>	<br>
+			<a href="javascript:void(0);" class="map-link" data-wonder="1">number1</a>
+			<a href="javascript:void(0);" class="map-link" data-wonder="2">number2</a>
+			<a href="javascript:void(0);" class="map-link" data-wonder="3">number3</a>
+			<a href="javascript:void(0);" class="map-link" data-wonder="4">number4</a>
+			<a href="javascript:void(0);" class="map-link" data-wonder="5">number5</a>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCK7sql4zSHreVAdLPH7t8JoNE1gy5Tuyk" type="text/javascript"></script>
+			<!-- <script type="text/javascript" src="CustomGoogleMapMarker.js"></script>-->
+			<script type="text/javascript">
+			function initialize() {
+
+				var myLatlng = new google.maps.LatLng(-33.890542, 151.274856);
+				var mapOptions = {
+					zoom: 5,
+					center: myLatlng,
+					disableDefaultUI: true
+				}
+				
+				//var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+				markers = [];
+				var locations = [
+				  ['Bondi Beach', -33.890542, 151.274856, 4],
+				  ['Coogee Beach', -33.923036, 151.259052, 5],
+				  ['Cronulla Beach', -34.028249, 151.157507, 3],
+				  ['Manly Beach', -33.80010128657071, 151.28747820854187, 2],
+				  ['Maroubra Beach', -33.950198, 151.259302, 1]
+				];
+				
+				var map = new google.maps.Map(document.getElementById('map-div'), {
+				  zoom: 10,
+				  center: new google.maps.LatLng(-33.92, 151.25),
+				  mapTypeId: google.maps.MapTypeId.ROADMAP
+				});
+
+				var infowindow = new google.maps.InfoWindow();
+
+				var marker, i;
+
+				for (i = 0; i < locations.length; i++) {  
+				  marker = new google.maps.Marker({
+					position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+					map: map
+				  });
+
+				  google.maps.event.addListener(marker, 'click', (function(marker, i) {
+					return function() {
+					  infowindow.setContent(locations[i][0]);
+					  infowindow.open(map, marker);
+					map.panTo(this.getPosition());
+					map.setZoom(14);
+					}
+				  })(marker, i));
+				  markers.push({id: locations[i][3], marker: marker});
+				}
+				
+				
+				// Example standard marker
+				/*
+				var marker = new google.maps.Marker({
+					position: myLatlng,
+					map: map,
+					title: 'Hello World!'
+				});
+				*/
+				/*
+				
+				overlay = new CustomMarker(
+					myLatlng, 
+					map,
+					{
+						marker_id: '123'
+					}
+				);
+				*/
+			}
+
+			google.maps.event.addDomListener(window, 'load', initialize);
+			</script>
+
+			<script>
+			$('.map-link').on('click', function () {
+				google.maps.event.trigger(markers[$(this).attr("data-wonder")], 'click');
+			});
+			
+			
+			</script>
+	</body>
+</html>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 36</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="12" cy="12" r="12"></circle>
+        <filter x="-31.2%" y="-18.8%" width="162.5%" height="162.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.801684736   0 0 0 0 0.801684736   0 0 0 0 0.801684736  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-36" transform="translate(4.000000, 1.000000)">
+            <g id="Group-20-Copy-4">
+                <g id="Group-14-Copy-9">
+                    <g id="Oval-Copy-30">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+            <g id="wind-speed" transform="translate(5.793103, 8.275862)" fill="#000000">
+                <path d="M1.40689655,12.2888437 C0.916065469,12.0644635 0.445950848,11.8059577 -3.56314978e-12,11.5165852 L0,0.324402259 L1.40689655,0.324402259 L1.40689655,12.2888437 Z" id="Combined-Shape"></path>
+                <path d="M1.02307232,3.11821787 L3.91150142,1.75939296 C4.12578316,1.65858684 4.56494655,1.59525389 4.80154269,1.63109206 L12.5566618,2.80579127 C12.6020016,2.8126591 12.662069,2.87763856 12.662069,2.91900442 L12.662069,4.21784527 C12.662069,4.25889575 12.601027,4.32526142 12.5556213,4.33220369 L4.80050218,5.51791782 C4.56496336,5.55393036 4.12393858,5.49110033 3.9105716,5.39109211 L1.0221425,4.03724295 L0.384754052,5.19404489 L3.27318317,6.54789405 C3.75391666,6.77322091 4.49888143,6.87935141 5.03058559,6.79805682 L12.7857047,5.61234269 C13.5098981,5.50161758 14.0689655,4.89379162 14.0689655,4.21784527 L14.0689655,2.91900442 C14.0689655,2.24105658 13.5087359,1.63501364 12.7846642,1.52533558 L5.02954508,0.350636355 C4.49654211,0.26990024 3.75353521,0.377051286 3.27225335,0.603464245 L0.383824227,1.96228915 L1.02307232,3.11821787 Z" id="Path"></path>
+                <polygon id="Path" points="4.22068966 0.972771179 4.22068966 6.16364292 5.62758621 6.16364292 5.62758621 0.972771179"></polygon>
+                <polygon id="Path" points="7.03448276 1.62201129 7.03448276 5.5148384 8.44137931 5.5148384 8.44137931 1.62201129"></polygon>
+                <polygon id="Path" points="9.84827586 1.94641355 9.84827586 5.19043614 11.2551724 5.19043614 11.2551724 1.94641355"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

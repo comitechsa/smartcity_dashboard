@@ -1,0 +1,5 @@
+https://www.sitepoint.com/find-a-route-using-the-geolocation-and-the-google-maps-api/
+https://phppot.com/php/how-to-draw-path-on-map-using-google-maps-direction-api/
+https://stackoverflow.com/questions/5959788/google-maps-api-v3-how-show-the-direction-from-a-point-a-to-point-b-blue-line
+
+https://jsfiddle.net/upsidown/5m6yj5qf/

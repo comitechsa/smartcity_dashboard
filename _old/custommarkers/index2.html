@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+
+	<title>Google Maps API</title>
+
+	<style type="text/css">
+
+	<!-- 
+	#map-div {
+		width: 700px;
+		height: 400px;
+	}	
+	-->
+
+	#map-canvas {
+		height: 400px;
+	}
+	</style>
+
+	<!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>-->
+
+
+	</head>
+	<body>
+
+		<!-- <div id="map-div"></div>-->
+		<br><br>
+		
+		<div id="map-canvas"></div>
+		<!-- <div id="markers"></div>-->
+
+		<a href="javascript:void(0);" class="marker-link" data-markerid="0">number0</a>
+		<a href="javascript:void(0);" class="marker-link" data-markerid="1">number1</a>
+		<a href="javascript:void(0);" class="marker-link" data-markerid="2">number2</a>
+		<a href="javascript:void(0);" class="marker-link" data-markerid="3">number3</a>
+		<a href="javascript:void(0);" class="marker-link" data-markerid="4">number4</a>
+		<a href="javascript:void(0);" class="marker-link" data-markerid="5">number5</a>
+		
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCK7sql4zSHreVAdLPH7t8JoNE1gy5Tuyk" type="text/javascript"></script>
+		<script>
+		function initialize() {
+			var markers = new Array();
+
+			var mapOptions = {
+				zoom: 5,
+				mapTypeId: google.maps.MapTypeId.ROADMAP,
+				center: new google.maps.LatLng(1, 1)
+			};
+
+			var locations = [
+				[new google.maps.LatLng(0, 0), 'Marker 1', 'Infowindow content for Marker 1'],
+				[new google.maps.LatLng(0, 1), 'Marker 2', 'Infowindow content for Marker 2'],
+				[new google.maps.LatLng(0, 2), 'Marker 3', 'Infowindow content for Marker 3'],
+				[new google.maps.LatLng(1, 0), 'Marker 4', 'Infowindow content for Marker 4'],
+				[new google.maps.LatLng(1, 1), 'Marker 5', 'Infowindow content for Marker 5'],
+				[new google.maps.LatLng(1, 2), 'Marker 6', 'Infowindow content for Marker 6']
+				
+			];
+
+			var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+			var infowindow = new google.maps.InfoWindow();
+
+			for (var i = 0; i < locations.length; i++) {
+
+				// Append a link to the markers DIV for each marker
+				//$('#markers').append('<a class="marker-link" data-markerid="' + i + '" href="#">' + locations[i][1] + '</a> ');
+
+				var marker = new google.maps.Marker({
+					position: locations[i][0],
+					map: map,
+					title: locations[i][1],
+				});
+				  google.maps.event.addListener(marker, 'click', (function(marker, i) {
+					return function() {
+					  //infowindow.setContent(locations[i][0]);
+					  //infowindow.open(map, marker);
+					map.panTo(this.getPosition());
+					map.setZoom(14);
+					}
+				  })(marker, i));
+				  
+				// Register a click event listener on the marker to display the corresponding infowindow content
+				google.maps.event.addListener(marker, 'click', (function (marker, i) {
+
+					return function () {
+						infowindow.setContent(locations[i][2]);
+						infowindow.open(map, marker);
+					}
+
+				})(marker, i));
+
+				// Add marker to markers array
+				markers.push(marker);
+			}
+
+			// Trigger a click event on each marker when the corresponding marker link is clicked
+			$('.marker-link').on('click', function () {
+				google.maps.event.trigger(markers[$(this).data('markerid')], 'click');
+			});
+		}
+
+		initialize();
+		</script>
+
+		
+	</body>
+</html>

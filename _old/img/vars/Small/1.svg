@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 11 Copy 8</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-43.8%" y="-43.8%" width="187.5%" height="187.5%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.801684736   0 0 0 0 0.801684736   0 0 0 0 0.801684736  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-11-Copy-8" filter="url(#filter-1)" transform="translate(3.000000, 1.000000)">
+            <circle id="Oval-Copy-11" fill="#FFFFFF" cx="12" cy="12" r="12"></circle>
+            <g id="Group-6-Copy-2" transform="translate(8.000000, 5.000000)" stroke="#000000" stroke-width="1.49380438">
+                <g id="Group-3" transform="translate(0.000000, 0.331142)">
+                    <path d="M4,8.04601648 L4,5.0054095" id="Line-2" stroke-linecap="square"></path>
+                    <ellipse id="Oval" fill="#000000" cx="4" cy="9.0394427" rx="1" ry="1"></ellipse>
+                    <path d="M1,6.41101138 L1,2.98760876 C1,1.337598 2.337598,1.52625701e-13 3.98760876,1.52322599e-13 L4.01239124,1.52322599e-13 C5.662402,1.52019497e-13 7,1.337598 7,2.98760876 L7,6.41101138 C7.62236341,7.11150919 8,8.03166498 8,9.0394427 C8,11.2340593 6.209139,13.0131476 4,13.0131476 C1.790861,13.0131476 0,11.2340593 0,9.0394427 C0,8.03166498 0.377636589,7.11150919 1,6.41101138 Z" id="Combined-Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

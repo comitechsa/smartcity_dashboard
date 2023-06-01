@@ -1,0 +1,18 @@
+#bg {position:fixed; top:-50%; left:-50%; width:200%; height:200%;}
+#bg img {position:absolute; top:0; left:0; right:0; bottom:0; margin:auto; min-width:50%;min-height:50%; }
+html, body, table, input, select, textarea { font: 12px verdana,arial,tahoma,helvetica;}
+body {border:0;margin:0;width:100%;background-color: #4698e2;}
+#page-wrap { position: relative; z-index: 2;}
+#main{width:566px;height:342px;margin-left:auto;margin-right:auto;text-align:left;margin-top:120px;}
+#login{width:566px;height:342px;background:url(images/login/login.png) no-repeat; color:#FFF}
+#loginMeno{padding-left:220px;padding-top:28px;height:38px}
+#loginInput{padding-left:50px;padding-top:50px;height:150px;}
+#loginInput .lbl{float:left;width:160px;text-align:right;padding-right:5px;}
+#loginInput .txt{float:left;width:240px;}
+#loginInput .btn{padding-right:150px}
+#loginFooter {padding-left:50px;padding-top:25px;height:50px;}
+#loginFooter .date{float:left;width:260px;}
+#loginFooter .lang{float:right;width:140px;}	
+.m_tb2 {height:22px;background: url(images/login/text-bg.gif) repeat-x scroll 0 0 transparent ;border:1px solid #B5B8C8;padding:1px 3px;}
+.m_b2 {background:url(images/login/btn.gif) no-repeat transparent; height:26px;border:none;cursor:pointer; width:91px; color:#FFF; font-weight:bold;}
+#msg-div {position:absolute;top:10px;width:250px;z-index:20000;margin-left:auto;margin-right:auto;left:0;right:0;}
